@@ -28,6 +28,8 @@ Kinzi mentioned that the /CS sigal from pin12 of U3 has to be synchronized with 
 So I poked around with this variation and that was the goal. <br>
 The solution is to use two 74HCT173 D-FF and one 74HCT14 INV - so the /CS signal from pin 12 of U3 gets synchroninzed with the system clock
 and addresses the ROM. BINGO <br>
+<p>take a look into the <a href="C128_U36_adapter_MANUAL.pdf"> C128 U36 adapter manual</a> or into the 
+    <a href="Schematic_U36_adapter.pdf"> SCHEMATIC </a>for further information.</p>
 
 # In the C128D-CR
 <img src="./pics/C128DCR-U36.jpg" alt="C128D-CR with the Megabit ROM"> <br>
