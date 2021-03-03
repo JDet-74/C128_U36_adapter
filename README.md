@@ -1,5 +1,7 @@
 # C128_U36_adapter
 A new design of the megabit adapter for U36 in the C128
+<img src="./pics/3D-PCB-SOIC.png" alt="3D PCB SOIC Version"> <br>
+<img src="./pics/CRT-Monitor.jpg" alt="CRT Monitor"> <br>
 
 # The story began
 I tried to recreate the original Megabit adapter for the U36 socket in the C128.
