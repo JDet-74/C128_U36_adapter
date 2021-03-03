@@ -19,7 +19,11 @@ I scoped the signals and figured out, that the transistor I used was to slow to 
 After that I tried logic gates - but this does not work either.
 I figured out that there is a GLITCH on Pin12 of U3 <br>
 <img src="./pics/GLITCH_U3.jpg" alt="GLITCH on U3 pin 12"> <br>
+The GLITCH triggered always the D-FF and so it does not work :( what a bummer ;(
 Kinzi mentioned that the /CS sigal from pin12 of U3 has to be synchronized with the 1MHz clock of the C128. <br>
 So I poked around with this solution and that was the goal. <br>
+The solution is to use two 74HCT173 D-FF and one 74HCT14 INV - so the /CS signal from pin 12 of U3 gets synchroninzed with the system clock
+and addresses the ROM. BINGO <br>
+
 
 
