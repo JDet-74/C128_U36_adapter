@@ -30,10 +30,10 @@ The solution is to use two 74HCT173 D-FF and one 74HCT14 INV - so the /CS signal
 and addresses the ROM. BINGO <br>
 
 # In the C128D-CR
-<img src="./pics/C128DCR-U36.jpg" alt="C128D-CR with the Megabit ROM> <br>
+<img src="./pics/C128DCR-U36.jpg" alt="C128D-CR with the Megabit ROM"> <br>
 
 # In the C128
-<img src="./pics/C128-U36.jpg" alt="C128 with the Megabit ROM> <br>
+<img src="./pics/C128-U36.jpg" alt="C128 with the Megabit ROM"> <br>
 
 # Fabrication files
 You can find a panelized GERBER file version and a single file version. <br>
