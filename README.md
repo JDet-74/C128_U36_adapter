@@ -13,7 +13,7 @@ The information to this project I found on cmb8bit.com. You can find the PDFs an
     <li> <a href="./cbm8bit.com/megabit-help.BIN"> megabit-help.bin</a> </li>
 </ul>
 
-# The issue began
+# The issue was ...
 I designed a PCB with the information of the PDFs and tested the soldered PCB. <br>
 Unfurtunately it does not work :( <br>
 Thankfully a guy (Kinzi) from the great Forum64 helped me out by troubleshooting. <br>
@@ -23,7 +23,7 @@ I figured out that there is a GLITCH on Pin12 of U3 <br>
 <img src="./pics/GLITCH_U3.jpg" alt="GLITCH on U3 pin 12"> <br>
 The GLITCH triggered always the D-FF and so it does not work :( what a bummer ;(
 
-# The solution
+# The solution was ...
 Kinzi mentioned that the /CS sigal from pin12 of U3 has to be synchronized with the 1MHz clock of the C128. <br>
 So I poked around with this variation and that was the goal. <br>
 The solution is to use two 74HCT173 D-FF and one 74HCT14 INV - so the /CS signal from pin 12 of U3 gets synchroninzed with the system clock
@@ -31,10 +31,10 @@ and addresses the ROM. BINGO <br>
 <p>take a look into the <a href="C128_U36_adapter_MANUAL.pdf"> C128 U36 adapter manual</a> or into the 
     <a href="Schematic_U36_adapter.pdf"> SCHEMATIC </a>for further information.</p>
 
-# In the C128D-CR
+# In the C128D-CR ...
 <img src="./pics/C128DCR-U36.jpg" alt="C128D-CR with the Megabit ROM"> <br>
 
-# In the C128
+# In the C128 ...
 <img src="./pics/C128_U36.jpg" alt="C128 with the Megabit ROM"> <br>
 
 # Fabrication files
