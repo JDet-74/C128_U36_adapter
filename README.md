@@ -25,7 +25,7 @@ The GLITCH triggered always the D-FF and so it does not work :( what a bummer ;(
 
 # The solution was ...
 Kinzi mentioned that the /CS signal from pin12 of U3 has to be synchronized with the 1MHz clock of the C128. <br>
-So I poked around with this variation and that was the goal. <br>
+So I poked around with this variation and that was the success. <br>
 The solution is to use two 74HCT173 D-FF and one 74HCT14 INV - so the /CS signal from pin 12 of U3 gets synchronized with the system clock
 and addresses the ROM. BINGO <br>
 <p>Take a look into the <a href="C128_U36_adapter_MANUAL.pdf"> C128 U36 adapter manual</a> or into the 
